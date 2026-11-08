@@ -79,6 +79,33 @@
 [data-theme="light"] .contact-panel {
   border-color: #a7bdcf; background: radial-gradient(ellipse at right,#d8eef477,transparent 65%),#fff;
 }
+/* Service links retain navigation semantics; brand fills stay constant in both themes. */
+.service-card { display: flex; flex-direction: column; }
+.service-card ul { margin-top: auto; }
+.service-card .service-cta {
+  align-self: flex-start;
+  justify-content: center;
+  min-height: 48px;
+  max-width: 100%;
+  margin-top: 12px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #50d4ee;
+  color: #10283f;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  gap: 14px;
+  transition: background-color .2s;
+}
+.meta-card .service-cta { background: #ff8a3c; }
+.service-card .service-cta:hover { background: #79e1f5; color: #10283f; }
+.meta-card .service-cta:hover { background: #ffa366; }
+.service-card .service-cta:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 4px;
+}
 /* CTA keeps dark ink on orange in both themes: never white on orange. */
 .button { color: #10141c; }
 @media (min-width: 761px) and (max-width: 1050px) {
