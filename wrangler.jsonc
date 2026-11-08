@@ -1,6 +1,6 @@
 {
-  // Preparação local para Cloudflare Workers Static Assets. Não executado.
-  "name": "tnt-digital-site",
+  // Cloudflare Workers Static Assets.
+  "name": "site-tntdigital",
   "compatibility_date": "2026-11-08",
   "assets": {
     "directory": "./public"
